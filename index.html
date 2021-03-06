@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>ConquestHCF | Home</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+
+	<!-- Custom CSS for this template -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="js/bootstrap/bootstrap.min.js">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+
+</head>
+<body>
+    <body style="background-color:black;"></body>
+
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button> 
+	
+    <body style="background-color:black;"></body>
+	<!-- Navbar -->
+	<div class="topnav" id="myTopnav">
+		<div class="max-width">
+            <body style="background-color:black;"></body>
+			  <a href="#head">Home</a>
+			  <a href="#about">About</a>
+			  <a href="#gamemodes">Forms</a>
+			  <a href="#vote">Vote</a>
+              <a href="#vote">Store</a>
+		  	  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+		</div>
+	</div>
+	<!-- End Navbar -->
+
+	<!-- Header (Banner) -->
+	<header id="head" class="parallax">
+		<h1>The greatest mcpe hcf server</h1>
+		<h3>play.ConquestHCF.com</h3>
+	</header>
+	<!-- End Header -->
+
+	<!-- About Section -->
+	<section id="about">
+		<h1>OUR SERVER</h1>
+		<p>Some of our features.</p>
+		<hr>
+		<!-- First row of features -->
+		<div class="row features">
+			<div class="col">
+				<i class="fab fa-cloudscale feature"></i>
+				<h2>We're fast, like sonic</h2>
+				<p>Our servers are so blazing fast, even Sonic can't keep up, amazing, right?!</p>
+			</div>
+			<div class="col">
+				<i class="fas fa-users feature"></i>
+				<h2>Great Community</h2>
+				<p>We've got an amazing community, it's always fun on our server!</p>
+			</div>
+			<div class="col">
+				<i class="fas fa-shield-alt feature"></i>
+				<h2>Always online</h2>
+				<p>Our server has a 99.9% Uptime, so you'll be playing whenever you want!</p>
+			</div>
+		</div>
+		<!-- End first row -->
+
+		<!-- Second row of features -->
+		<div class="row features">
+			<div class="col">
+				<i class="far fa-calendar-alt feature"></i>
+				<h2>Amazing events</h2>
+				<p>We've got some super fun events in store for you, it's amazing, seriously, the best!</p>
+			</div>
+			<div class="col">
+				<i class="fas fa-code-branch feature"></i>
+				<h2>Custom Plugins</h2>
+				<p>We've created some custom plugins for our server, they're amazing, you'll like them!</p>
+			</div>
+			<div class="col">
+				<i class="fas fa-fighter-jet feature"></i>
+				<h2>Fighter Jet</h2>
+				<p>This isn't a feature but I just really like fighter jets, nah it's a filler.</p>
+			</div>
+		</div>
+		<!-- End second row -->
+
+		<!-- Note: You can add as many feature rows as you like. -->
+	</section>
+	<!-- End about section -->
+
+	<!-- Banner 1 -->
+	<section id="banner" class="parallax">
+		<h1>WHAT ARE YOU WAITING FOR?</h1>
+		<h2>JOIN OUR SERVER NOW AT <i>PLAY.CONQUESTHCF.COM</i></h2>
+	</section>
+	<!-- End Banner 1 -->
+
+	
+
+	<!-- Smooth Scrolling Script (from https://goo.gl/uWLqWu) | Do not touch if you don't know what you're doing! -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+
+		    // Make sure this.hash has a value before overriding default behavior
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 100, function(){
+		   
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    } // End if
+		  });
+		});
+	</script>
+	<!-- End Smooth Scrolling Script -->
+
+	<script>
+		function myFunction() {
+		    var x = document.getElementById("myTopnav");
+		    if (x.className === "topnav") {
+		        x.className += " responsive";
+		    } else {
+		        x.className = "topnav";
+		    }
+		}
+	</script>
+
+	<script>
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	        document.getElementById("myBtn").style.display = "block";
+	    } else {
+	        document.getElementById("myBtn").style.display = "none";
+	    }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	    document.body.scrollTop = 0;
+	    document.documentElement.scrollTop = 0;
+	}
+	</script>
+
+</body>
+</html>
